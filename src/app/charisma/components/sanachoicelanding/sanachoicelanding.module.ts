@@ -19,6 +19,11 @@ import {MatInputModule} from "@angular/material/input";
 import {MatListModule} from "@angular/material/list";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {DropdownModule} from "primeng/dropdown";
+import {InputNumberModule} from "primeng/inputnumber";
+import {MatRadioModule} from "@angular/material/radio";
+import {MatDialogModule} from "@angular/material/dialog";
+import {TooltipModule} from "primeng/tooltip";
+import {MatChipsModule} from "@angular/material/chips";
 
 @NgModule({
     imports: [
@@ -42,6 +47,11 @@ import {DropdownModule} from "primeng/dropdown";
         MatListModule,
         MatProgressSpinnerModule,
         DropdownModule,
+        InputNumberModule,
+        MatRadioModule,
+        MatDialogModule,
+        TooltipModule,
+        MatChipsModule,
     ],
     declarations: [SanachoicelandingComponent]
 })

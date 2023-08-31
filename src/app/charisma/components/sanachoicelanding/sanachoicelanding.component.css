@@ -19,3 +19,6 @@ p-button.p-button-sm1 {
     margin-top: 5px;
     transform:translateX(-50%);
 }
+
+
+.mat-divider.mat-divider-horizontal { border-top-width: 4px; &.divider-1 { border-color: purple; }; &.divider-2 { border-radius: 4px; border-color: green; } }
