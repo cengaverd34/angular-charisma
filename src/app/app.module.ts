@@ -6,7 +6,7 @@ import { AppLayoutModule } from './layout/app.layout.module';
 import { HttpClientModule,HTTP_INTERCEPTORS} from "@angular/common/http";
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AuthGuard} from "./charisma/components/auth/auth.guard";
 import {AuthInterceptor} from "./charisma/components/auth/auth.interceptor";
 import {UserService} from "./charisma/service/user.service";
@@ -30,11 +30,13 @@ import {MatButtonModule} from '@angular/material/button';
         AppComponent
     ],
     imports: [
+        ReactiveFormsModule,
         MatButtonModule,
         MatTooltipModule,
         AppRoutingModule,
         AppLayoutModule,
-        HttpClientModule, AppRoutingModule,
+        HttpClientModule,
+        AppRoutingModule,
         FormsModule,
         HttpClientModule,
         RouterModule,

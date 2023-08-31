@@ -20,6 +20,7 @@ export class CustomerForm {
     telefon ?: string;
     email ?: string;
     birthdate ?: string;
+    familyCount ?: string;
     question ?: string;
     question1 ?: string;
 
