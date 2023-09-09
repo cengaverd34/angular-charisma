@@ -1,3 +1,4 @@
+import {Country} from "./country";
 
 
 export interface Representative {
@@ -6,23 +7,23 @@ export interface Representative {
 }
 
 export class CustomerForm {
-
     customerFormId  ?: number;
     company ?: string;
-    strasse ?: string;
-    plz?: string;
-    ort?: string;
-    countryName ? : string;
     code ?: string;
     male ? : string;
     firstname ?: string;
     surname ?: string;
-    telefon ?: string;
+    telefon ?: number;
     email ?: string;
-    birthdate ?: string;
+    birthdate ?:  Date ;
     familyCount ?: string;
     question ?: string;
     question1 ?: string;
+    ort?: Country;
+    plz?: number;
+    strasse ?: string;
+
+
 
 
 }

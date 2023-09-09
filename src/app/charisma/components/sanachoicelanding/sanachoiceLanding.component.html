@@ -1,0 +1,528 @@
+
+<div>
+    <div class="bg-cover bg-no-repeat bg-bottom py-6 px-3 md:px-6 relative"
+         style="background: url(assets/layout/images/landing/landingimage.jpeg)">
+        <div
+            class="w-full h-full absolute z-0">
+        </div>
+        <div class="my-0 mx-auto w-full z-2 relative" style="max-width: 1200px ">
+            <div class="flex flex-column gap-5 lg:flex-row justify-content-between">
+                <div class="flex justify-content-center lg:justify-content-start align-items-center gap-4">
+                    <ul class="list-none flex gap-6 p-0 m-0">
+
+                        <a (click)="scrollToElement(features)"
+                           class="text-white cursor-pointer transition-duration-200 hover:text-primary-100">
+                            <li>Features</li>
+                        </a>
+                        <a (click)="scrollToElement(events)"
+                           class="text-white cursor-pointer  transition-duration-200 hover:text-primary-100">
+                            <li>Events</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-column align-items-center gap-6 mt-6 pt-0 ">
+<!--                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86"-->
+<!--                     height="86" viewBox="0 0 86 86">-->
+<!--                    <defs>-->
+<!--                        <linearGradient id="b" x1="50%" x2="50%" y1="-66.708%" y2="100%">-->
+<!--                            <stop offset="0%" stop-color="var(&#45;&#45;primary-400)"/>-->
+<!--                            <stop offset="100%" stop-color="var(&#45;&#45;primary-700)"/>-->
+<!--                        </linearGradient>-->
+<!--                        <circle id="f" cx="43" cy="43" r="43"/>-->
+<!--                        <path id="d"-->
+<!--                              d="M66.29 12.931L56.14 0 43.17 10.353l-8.939-8.036-8.955 9.04-5.233-1.237L3.49 29.463H0v14.333h86.796V29.463h-2.49L69.427 11.97l-3.136.961z"/>-->
+<!--                    </defs>-->
+<!--                    <g fill="none" fill-rule="evenodd">-->
+<!--                        <mask id="c" fill="#fff">-->
+<!--                            <use xlink:href="#f"/>-->
+<!--                        </mask>-->
+<!--                        <use fill="url(#b)" xlink:href="#f"/>-->
+<!--                        <g fill="#FFF" fill-rule="nonzero" mask="url(#c)">-->
+<!--                            <path-->
+<!--                                    d="M42.638 69.342c.352.001.68-.18.866-.478l4.075-6.528c.101-.163.155-.35.155-.542l-.073-36.195 4.088.008a1.018 1.018 0 0 0 1.02-1.02l-.006-3.065a1.026 1.026 0 0 0-1.024-1.024l-6.133-.013-.022-11.604A4.052 4.052 0 0 0 46.6 6.18a4.081 4.081 0 0 0-1.203-2.893 4.081 4.081 0 0 0-2.893-1.204 4.045 4.045 0 0 0-2.889 1.191 4.045 4.045 0 0 0-1.191 2.89 4.084 4.084 0 0 0 1.027 2.701l.013 6.498.001.001.008 4.087.001 1.02-6.132-.01a1.018 1.018 0 0 0-1.02 1.02l.007 3.065c0 .565.46 1.024 1.024 1.024l4.088.01.072 36.194c0 .19.055.38.157.542l4.102 6.543c.186.301.515.482.866.483zm-1.13-53.552l2.04-2.04.003 1.198-2.04 2.04-.002-1.198zm1.012-5.53c.35 0 .693-.043 1.022-.127l.001.727-2.04 2.04-.005-2.772c.327.085.67.13 1.022.132zm-2.052-4.092a2.022 2.022 0 0 1 .596-1.445 2.023 2.023 0 0 1 1.444-.595c.545 0 1.06.214 1.447.6.387.388.599.901.6 1.447.002.546-.21 1.06-.595 1.444a2.022 2.022 0 0 1-1.444.596 2.054 2.054 0 0 1-2.048-2.047zm1.05 13.711l2.04-2.04.005 2.643-2.045-.005v-.598zm-7.15 2.627l6.133.013 10.22.02.002 1.023-4.088-.009-8.176-.016-4.089-.009-.002-1.022zm5.188 38.979l-.072-35.902 2.045.005.05 25.161c.001.564.46 1.022 1.023 1.024.566 0 1.023-.457 1.021-1.02l-.05-25.162 2.043.004.072 35.903-3.056 4.895-3.076-4.908z"/>-->
+<!--                            <path-->
+<!--                                    d="M43.237 6.896a1.022 1.022 0 0 0-.004-1.446c-.4-.4-1.047-.402-1.445-.003a1.023 1.023 0 0 0 .003 1.446c.4.4 1.047.401 1.446.003z"/>-->
+<!--                        </g>-->
+<!--                        <g mask="url(#c)">-->
+<!--                            <g transform="translate(-.796 44.687)">-->
+<!--                                <mask id="e" fill="#fff">-->
+<!--                                    <use xlink:href="#d"/>-->
+<!--                                </mask>-->
+<!--                                <use fill="#FFF" xlink:href="#d"/>-->
+<!--                                <path fill="#F1E1E6"-->
+<!--                                      d="M49.358 5.645L52.5 8.078l2.59-2.115 2.186 1.642 1.857-1.642 2.453.613-5.156-6.609zM25.496 11.277l4.572-1.625 2.616 2.788 3.203-2.97 2.98 1.964L41.58 8.62l-7.082-6.393z"-->
+<!--                                      mask="url(#e)"/>-->
+<!--                            </g>-->
+<!--                        </g>-->
+<!--                    </g>-->
+<!--                </svg>-->
+
+                <span class="text-white text-4xl"> Sanachoice</span>
+                <span class="text-white text-2xl text-center line-height-6">GEWINNEN IM WERT VON 500 CHF</span>
+                <button (click)="scrollToElement(features)" pButton pRipple label="JEZST TEILNEHMEN"
+                       ></button>
+            </div>
+        </div>
+       </div>
+      </div>
+<div  #features id="features" class="flex justify-content-center py-6 px-3 lg:px-6 w-full">
+    <div class="surface-card p-4 shadow-2 border-round">
+        <div  class="border-5 border-dashed surface-border border-round p-4" style="min-height: 20rem">
+                <div class="p-panel-icons-center text-900 font-semibold text-lg mt-3">Ja, ich möchte
+                    unverbindliche Informationen zum Angebot erhalten:
+                </div>
+                <p-divider></p-divider>
+
+
+            <div class="flex gap-5 flex-column-reverse md:flex-row">
+                <div class="col-4 flex-auto p-fluid">
+                    <form [formGroup]="reactiveForm" #form="ngForm"  >
+                        <div class="grid formgrid p-fluid">
+                            <div  class="col-3 md:col-2" >
+                            <div class="field-radiobutton">
+                                <p-radioButton   formControlName="male"  value="Frau"
+                                                 id="Frau">
+                                </p-radioButton>
+                                <label for="Frau">Frau</label>
+                            </div>
+                        </div>
+                        <div class="col-3 md:col-2">
+                            <div class="field-radiobutton">
+                                <p-radioButton formControlName="male"  value="Herr"
+                                               id="Herr">
+                                </p-radioButton>
+                                <label for="Herr">Herr</label>
+
+                            </div>
+                        </div>
+                            <div *ngIf="male.invalid && (male.dirty || male.touched)" class="invalid-feedback">
+                                <div *ngIf="male.errors?.['required']">
+                                    <button class="tooltip" mat-raised-button
+                                            matTooltip="Personen ist ein Pflichtfeld."
+                                            matTooltipClass="Personen ist ein Pflichtfeld.">
+                                        <fa-icon style='color:red' class="tooltip" icon="exclamation-triangle"></fa-icon>
+                                    </button>
+                                </div>
+                            </div>
+                       </div>
+                        <div style="height: 0.1rem"></div>
+                        <div class="grid formgrid p-fluid">
+                            <div class="field mb-4 col-12 md:col-6">
+                                <div class="p-inputgroup">
+                                                <span class="p-inputgroup-addon">
+                                                  <fa-icon icon="user"></fa-icon>
+
+                                                </span>
+                                    <span class="p-float-label">
+
+                                        <input
+                                                pInputText  name="inputgroup" formControlName="firstname"
+                                                required minlength="1" maxlength="250"
+                                                class="form-control form-control-sm" [class.is-invalid]="firstname.invalid &&
+                                                (firstname.dirty || firstname.touched)"
+                                                inputId="inputgroup"  >
+                                            <label for="inputgroup">Vorname</label>
+                                          <div *ngIf="firstname.invalid && (firstname.dirty || firstname.touched)" class="invalid-feedback">
+                                                <div *ngIf="firstname.errors?.['required']">
+                                                    <button class="tooltip" mat-raised-button
+                                                            matTooltip="Vorname ist ein Pflichtfeld."
+                                                            matTooltipClass="Vorname ist ein Pflichtfeld.">
+                                                       <fa-icon style='color:red' class="tooltip" icon="exclamation-triangle"></fa-icon>
+                                                            </button>
+                                                </div>
+                                                <div *ngIf="firstname.errors?.['minlength']">
+                                                    This field must have at least 1 character.
+                                                </div>
+                                                <div *ngIf="firstname.errors?.['maxlength']">
+                                                    This field must have at most 250 characters.
+                                                </div>
+                                            </div>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                            <div class="field mb-4 col-12 md:col-6">
+
+                            <div class="p-inputgroup">
+                                                <span class="p-inputgroup-addon">
+                                                  <fa-icon icon="user"></fa-icon>
+
+                                                </span>
+                                <span class="p-float-label">
+
+                                        <input
+                                                pInputText  name="inputgroupa" formControlName="surname"
+                                                required minlength="1" maxlength="250"
+                                                class="form-control form-control-sm" [class.is-invalid]="surname.invalid &&
+                                                (surname.dirty || surname.touched)"
+                                                inputId="inputgroupa"  >
+                                            <label for="inputgroupa">Nachname</label>
+                                          <div *ngIf="surname.invalid && (surname.dirty || surname.touched)" class="invalid-feedback">
+                                                <div *ngIf="firstname.errors?.['required']">
+                                                    <button class="tooltip" mat-raised-button
+                                                            matTooltip="Surname ist ein Pflichtfeld."
+                                                            matTooltipClass="Surname ist ein Pflichtfeld.">
+                                                       <fa-icon style='color:red' class="tooltip" icon="exclamation-triangle"></fa-icon>
+                                                            </button>
+                                                </div>
+                                                <div *ngIf="surname.errors?.['minlength']">
+                                                    This field must have at least 1 character.
+                                                </div>
+                                                <div *ngIf="surname.errors?.['maxlength']">
+                                                    This field must have at most 250 characters.
+                                                </div>
+                                            </div>
+                                    </span>
+
+                            </div>
+
+                        </div>
+                        </div>
+                        <div style="height: 0.1rem"></div>
+                        <div class="grid formgrid p-fluid">
+                            <div class="field mb-4 col-12 md:col-6">
+
+                                <div class="p-inputgroup">
+                                                <span class="p-inputgroup-addon">
+                                                  <fa-icon icon="map"></fa-icon>
+
+                                                </span>
+                                    <span class="p-float-label">
+
+                                        <input
+                                                pInputText  name="inputgroup" formControlName="strasse"
+                                                required minlength="1" maxlength="250"
+                                                class="form-control form-control-sm" [class.is-invalid]="strasse.invalid &&
+                                                (strasse.dirty || strasse.touched)"
+                                                inputId="inputgroup1"  >
+                                              <label for="inputgroup1">Strasse</label>
+                                          <div *ngIf="strasse.invalid && (strasse.dirty || strasse.touched)" class="invalid-feedback">
+                                                <div *ngIf="strasse.errors?.['required']">
+                                                    <button class="tooltip" mat-raised-button
+                                                            matTooltip="This field is required."
+                                                            matTooltipClass="This field is required.">
+                                                       <fa-icon style='color:red' class="tooltip" icon="exclamation-triangle"></fa-icon>
+                                                            </button>
+                                                </div>
+                                                <div *ngIf="strasse.errors?.['minlength']">
+                                                    This field must have at least 1 character.
+                                                </div>
+                                                <div *ngIf="strasse.errors?.['maxlength']">
+                                                    This field must have at most 250 characters.
+                                                </div>
+                                            </div>
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                                <div class="field mb-2 col-6 md:col-3 ">
+                                    <div class="p-inputgroup">
+                                                <span class="p-inputgroup-addon">
+                                                  <fa-icon icon="location-dot"></fa-icon>
+
+                                                </span>
+                                        <span class="p-float-label">
+
+                                        <input
+                                            pInputText  name="inputgroupa" formControlName="plz"
+                                            (change)="getOrtList($event)"     [(ngModel)]="customerForm.plz" type="number" required minlength="1" maxlength="6"
+                                            class="form-control form-control-sm" [class.is-invalid]="plz.invalid &&
+                                                (plz.dirty || plz.touched)"
+                                            inputId="inputgroupb"  >
+                                            <label for="inputgroupb">Plz</label>
+                                          <div *ngIf="plz.invalid && (plz.dirty || plz.touched)" class="invalid-feedback">
+                                                <div *ngIf="plz.errors?.['required']">
+                                                    <button class="tooltip" mat-raised-button
+                                                            matTooltip="This field is required."
+                                                            matTooltipClass="This field is required.">
+                                                       <fa-icon style='color:red' class="tooltip" icon="exclamation-triangle"></fa-icon>
+                                                            </button>
+                                                </div>
+                                                <div *ngIf="plz.errors?.['minlength']">
+                                                    This field must have at least 1 character.
+                                                </div>
+                                                <div *ngIf="plz.errors?.['maxlength']">
+                                                    This field must have at most 4 characters.
+                                                </div>
+                                            </div>
+                                    </span>
+                                    </div>
+                                </div>
+                                <div class="field mb-2 col-6 md:col-3">
+                                        <span class="p-float-label">
+                                            <span class="p-float-label">
+                                            <p-dropdown  [options]="country"
+                                                        formControlName="ort"  placeholder="Select a City" optionLabel="ort"
+                                                        inputId="float-label"
+                                            >
+                                             </p-dropdown>
+                                            <label for="float-label">Ort</label>
+                                             </span>
+                                        </span>
+                                </div>
+                        </div>
+                        <div style="height: 0.1rem"></div>
+                        <div class="grid formgrid p-fluid">
+                            <div class="field mb-4 col-12 md:col-6">
+                                <div class="p-inputgroup">
+                                                <span class="p-inputgroup-addon">
+                                                  <fa-icon icon="mobile-screen"></fa-icon>
+
+                                                </span>
+
+                                    <span class="p-float-label ">
+                                          <input  (keypress)="numberOnly($event)"  formControlName="telefon" pInputText
+                                                   mode="number"  placeholder="076 999 9999 "
+                                                  required minlength="10" maxlength="10"
+                                                  [class.is-invalid]="telefon.invalid &&
+                                                          (telefon.dirty || telefon.touched)"
+                                                          inputId="inputgroupd" >
+
+                                            <label for="inputgroupd">Telefon</label>
+                                            <div *ngIf="telefon.invalid && (telefon.dirty || telefon.touched)" class="invalid-feedback">
+                                                <div *ngIf="telefon.errors?.['required']">
+                                                    <button class="tooltip" mat-raised-button
+                                                            matTooltip="This field is required."
+                                                            matTooltipClass="This field is required.">
+                                                       <fa-icon style='color:red' class="tooltip" icon="exclamation-triangle"></fa-icon>
+                                                            </button>
+                                                </div>
+                                                <div *ngIf="telefon.errors?.['minlength']">
+                                                      <button class="tooltip" mat-raised-button
+                                                              matTooltip="This field is required > 076 111 1111"
+                                                              matTooltipClass="This field is required.">
+                                                       <fa-icon style='color:blue' class="tooltip" icon="exclamation-triangle"></fa-icon>
+                                                            </button>
+                                                </div>
+                                                <div *ngIf="telefon.errors?.['maxlength']">
+                                                    This field must have at most 10 characters.
+                                                </div>
+                                            </div>
+                                             </span>
+
+                                </div>
+
+                            </div>
+                            <div class="field mb-4 col-12 md:col-6">
+
+
+                                <div  class="p-inputgroup">
+                                                                      <span class="p-inputgroup-addon">
+                                                                         <fa-icon icon="envelope-open"></fa-icon>
+                                                                         </span>
+                                    <span class="p-float-label">
+                                                                    <input pInputText  type="email" id="inputgroupa" name="email" formControlName="email" placeholder="your-email@provider.com"
+                                                                           required minlength="1" maxlength="250" class="form-control form-control-sm"
+                                                                           [class.is-invalid]="email.invalid && (email.dirty || email.touched)">
+                                                                                    <label for="inputgroupa">Email</label>
+                                                                     <div *ngIf="email.invalid && (email.dirty || email.touched)" class="invalid-feedback">
+                                                                         <div *ngIf="email.errors?.['required']">
+                                                                            <button class="tooltip" mat-raised-button
+                                                                                    matTooltip="This field is required."
+                                                                                    matTooltipClass="This field is required.">
+                                                                                <fa-icon style='color:red' class="tooltip" icon="exclamation-triangle"></fa-icon>
+                                                                            </button>
+                                                                        </div>
+                                                                        <div *ngIf="email.errors?.['minlength']">
+                                                                            This field must have at least 1 character.
+                                                                        </div>
+                                                                        <div *ngIf="email.errors?.['maxlength']">
+                                                                            This field must have at most 250 characters.
+                                                                        </div>
+                                                                        <div *ngIf="!email.errors?.['required'] && !email.errors?.['minlength'] && !email.errors?.['maxlength'] && email.errors?.['emailValidator']">
+                                                                                 <button mat-raised-button
+                                                                                         matTooltip="Example : your-email@provider.com"
+                                                                                         matTooltipClass="Invalid email format.Example:your-email@provider.com">
+                                                                                <fa-icon style='color:blue' class="tooltip1" icon="exclamation-triangle"></fa-icon>
+                                                                            </button>
+                                                                        </div>
+
+                                            </div>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="height: 0.1rem"></div>
+                        <div class="grid formgrid p-fluid">
+                        <div class="field mb-4 col-12 md:col-6">
+
+                            <div class="p-inputgroup">
+                                                <span class="p-inputgroup-addon">
+                                                  <fa-icon icon="birthday-cake"></fa-icon>
+                                                </span>
+                                <span class="p-float-label">
+                                     <p-calendar  [required]="true" formControlName ="birthdate" dateFormat="dd.mm.yy" placeholder="dd.mm.yy"
+                                                   inputId="inputgroupd"/>
+                                      <label for="inputgroupa">Geburstag</label>
+                                    </span>
+                            </div>
+
+                        </div>
+                        <div class="field mb-4 col-12 md:col-6">
+                                <div class="p-inputgroup">
+                                                <span class="p-inputgroup-addon">
+                                                  <fa-icon icon="user-plus"></fa-icon>
+                                                </span>
+                                    <span class="p-float-label">
+
+                                        <input  (keypress)="numberOnly($event)"  formControlName="familyCount" pInputText
+                                                mode="number"  placeholder="Input number"
+                                                required minlength="1" maxlength="10"
+                                                [class.is-invalid]="familyCount.invalid &&
+                                                          (familyCount.dirty || familyCount.touched)"
+                                                inputId="inputgroupd" >
+                                            <label for="inputgroupa">Personen im Haushalt</label>
+                                          <div *ngIf="familyCount.invalid && (familyCount.dirty || familyCount.touched)" class="invalid-feedback">
+                                                <div *ngIf="familyCount.errors?.['required']">
+                                                    <button class="tooltip" mat-raised-button
+                                                            matTooltip="Ort ist ein Pflichtfeld."
+                                                            matTooltipClass="Ort ist ein Pflichtfeld.">
+                                                       <fa-icon style='color:red' class="tooltip" icon="exclamation-triangle"></fa-icon>
+                                                            </button>
+                                                </div>
+                                                <div *ngIf="familyCount.errors?.['minlength']">
+                                                    This field must have at least 1 character.
+                                                </div>
+                                                <div *ngIf="familyCount.errors?.['maxlength']">
+                                                    This field must have at most 250 characters.
+                                                </div>
+                                            </div>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="height: 0.1rem"></div>
+                        <div class="grid formgrid p-fluid">
+                            <div class="field mb-4 col-12 md:col-6">
+                                <div class="p-panel-icons-center 600 font-semibold text-sm  mt-2">Wohneigentum vorhanden?
+                               </div>
+                                <div class="field-radiobutton">
+                                    <p-radioButton   formControlName="question"  value="Ja"
+                                                     id="Ja">
+                                    </p-radioButton>
+                                    <label for="Ja">Ja</label>
+
+                                </div>
+                                <div class="field-radiobutton">
+                                    <p-radioButton formControlName="question"  value="Nein"
+                                                    id="Nein">
+                                    </p-radioButton>
+                                    <label for="Nein">Nein</label>
+
+                                </div>
+
+                                <div class="p-panel-icons-center 600 font-semibold text-sm  mt-2">
+                                    <button  mat-tab-nav-bar
+                                             matTooltip="Sind Sie in Besitz von Wohneigentum, wird der Eigenmietwert Ihrer Liegenschaft als fiktives Einkommen (sog. Naturaleinkommen) angerechnet. Sie sind verpflichtet, Ihr Wohneigentum entsprechend zu versteuern. Auch bei Vermietung des Wohneigentums müssen die Mieteinnahmen als Einkommen versteuert werden."
+                                             matTooltipPosition="after">
+                                        <fa-icon icon="info-circle"></fa-icon>
+                                        Was bedeutet das?
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="field mb-4 col-12 md:col-6">
+                                <div class="p-panel-icons-center 600 font-semibold text-sm  mt-2">Wertschriften vorhanden?
+                                </div>
+                                <div class="field-radiobutton">
+                                    <p-radioButton  formControlName="question1" value="Ja"
+                                                     id="Ja1">
+                                    </p-radioButton>
+                                    <label for="Ja1">Ja</label>
+
+                                </div>
+                                <div class="field-radiobutton">
+                                    <p-radioButton  formControlName="question1" value="Nein"
+                                                    id="Nein1">
+                                    </p-radioButton>
+                                    <label for="Nein1">Nein</label>
+
+                                </div>
+                                <div class="p-panel-icons-center 600 font-semibold text-sm  mt-2">
+                                    <button  mat-tab-nav-bar
+                                             matTooltip="Wenn Sie Wertschriften besitzen, sind Sie verpflichtet, diese in der Steuererklärung zu deklarieren. In- und ausländische Wertschriften (Aktien, Obligationen) unterliegen der Vermögenssteuer. Die daraus erzielten Erträge sind steuerpflichtig und entsprechend zu deklarieren."
+                                             matTooltipPosition="after">
+                                        <fa-icon icon="info-circle"></fa-icon>
+                                        Was bedeutet das?
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <p-messages [showTransitionOptions]="'500ms'" [hideTransitionOptions]="'500ms'"   [closable]="true" ></p-messages>
+                        <div class="p-panel-icons-center 600 font-semibold text-sm  mt-1">
+                          Mit dem Absenden des Formulars stimme ich den Nutzungsbedingungen und der Kontaktaufnahme durch die 2media GmbH oder einen Partner zu.
+                        </div>
+                        <div class="card flex justify-content-center gap-4">
+                            <button pRipple pButton   class=" styled-box-green "
+                                    type="button"  (click)="saveCustomer()"
+                                    label="Jetz Angebot Einholen ">
+                                    <fa-icon icon="circle-check"></fa-icon>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div #events id="events"  class="surface-section  justify-content-center  px-4 py-8 md:px-6 lg:px-8">
+    <div class="grid  justify-content-center w-full">
+
+            <div class="col-12 md:col-4">
+                <div class="shadow-1 p-5 surface-card text-center border-round">
+                    <div
+                        class="border-circle bg-blue-50 p-4 text-blue-600 inline-flex justify-content-center align-items-center mb-4">
+                        <i class="pi pi-heart text-5xl "></i>
+                    </div>
+                    <div class="text-900 font-medium text-2xl mb-4">Gewinnen</div>
+                    <div class="text-700 mb-4 line-height-3">Ende Juli 2023 wird offiziell ein/e Gewinner/in
+                        ausgelost und offiziell publiziert.
+                    </div>
+                    <button (click)="scrollToElement(features)"   pButton pRipple label="Learn More" class="p-button-text font-bold"></button>
+                </div>
+            </div>
+            <div class="col-12 md:col-4">
+                <div class="shadow-1 p-5 surface-card text-center border-round">
+                    <div
+                        class="border-circle bg-purple-50 p-4 text-purple-600 inline-flex justify-content-center align-items-center mb-4">
+                        <i class="pi pi-wifi text-5xl"></i>
+                    </div>
+                    <div class="text-900 font-medium text-2xl mb-5">Formular ausfüllen</div>
+                    <div class="text-700 mb-4 line-height-3"> Füllen Sie unten das
+                        Kontaktformular.
+
+                    </div>
+
+                    <button  (click)="scrollToElement(features)"  pButton pRipple label="Learn More" class="p-button-text font-bold"></button>
+                </div>
+            </div>
+            <div class="col-12 md:col-4">
+                <div class="shadow-1 p-5 surface-card text-center border-round">
+                    <div
+                        class="border-circle bg-orange-50 p-4 text-orange-600 inline-flex justify-content-center align-items-center mb-4">
+                        <i class="pi pi-lock text-5xl"></i>
+                    </div>
+                    <div class="text-900 font-medium text-2xl mb-4"> Abwarten</div>
+                    <div class="text-700 mb-4 line-height-3">Sie werden per Mail benachrichtigt ob Sie gewonnen
+                        haben oder nicht..
+                    </div>
+                    <button (click)="scrollToElement(features)"  pButton pRipple label="Learn More" class="p-button-text font-bold"></button>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+<app-config [minimal]="true"></app-config>

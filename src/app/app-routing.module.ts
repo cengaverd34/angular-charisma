@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { AppLayoutComponent } from './layout/app.layout.component';
-import {SanachoiceLandingModule} from "./charisma/components/sanachoicelanding/sanachoicelanding.module";
+import {SanachoiceLandingModule} from "./charisma/components/sanachoicelanding/sanachoiceLanding.module";
 
 const routerOptions: ExtraOptions = {
     anchorScrolling: 'enabled'
@@ -29,7 +29,7 @@ const routes: Routes = [
     { path: 'notfound', loadChildren: () => import('./charisma/components/notfound/notfound.module').then(m => m.NotfoundModule) },
     { path: 'notfound2', loadChildren: () => import('./charisma/components/notfound2/notfound2.module').then(m => m.Notfound2Module) },
     { path: 'landing', loadChildren: () => import('./charisma/components/landing/landing.module').then(m => m.LandingModule) },
-    { path: 'sanachoicelanding', loadChildren: () => import('./charisma/components/sanachoicelanding/sanachoicelanding.module').then(m => m.SanachoiceLandingModule) },
+    { path: 'sanachoicelanding', loadChildren: () => import('./charisma/components/sanachoicelanding/sanachoiceLanding.module').then(m => m.SanachoiceLandingModule) },
 
     { path: '**', redirectTo: '/auth/login' }
 ];

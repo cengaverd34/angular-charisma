@@ -13,6 +13,7 @@ import {UserService} from "./charisma/service/user.service";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatButtonModule} from '@angular/material/button';
+import {ToastModule} from "primeng/toast";
 
 // import {MatFormFieldModule} from '@angular/material/form-field';
 // import { MatInputModule } from '@angular/material/input';
@@ -41,7 +42,9 @@ import {MatButtonModule} from '@angular/material/button';
         HttpClientModule,
         RouterModule,
         BrowserAnimationsModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        ToastModule
+
         // MatToolbarModule,
         // MatFormFieldModule,
         // MatInputModule,

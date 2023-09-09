@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SanachoicelandingComponent } from './sanachoicelanding.component';
+import { SanachoiceLandingComponent } from './sanachoiceLanding.component';
 
 @NgModule({
     imports: [RouterModule.forChild([
-        { path: '', component: SanachoicelandingComponent }
+        { path: '', component: SanachoiceLandingComponent }
     ])],
     exports: [RouterModule]
 })
-export class SanachoicelandingRoutingModule { }
+export class SanachoiceLandingRoutingModule { }
